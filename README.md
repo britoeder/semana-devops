@@ -1,15 +1,16 @@
 <h1 align="center">
   <img src=".github/logo.png" alt="Launchstore" >
 </h1>
-
 <p>
   <img src="https://img.shields.io/badge/made%20by-RAFAEL%20MARTINS-04cc5e?style=flat-square">
+  <img src="https://img.shields.io/badge/Adapted%20by-EDER%20BRITO-04cc5e?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/martins-rafael/launchstore?color=04cc5e&style=flat-square">
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/martins-rafael/launchstore?color=04cc5e&style=flat-square">
   <a href="https://opensource.org/licenses/MIT">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-04cc5e?style=flat-square">
   </a>
-  
+
+
 </p>
 
 
@@ -28,6 +29,8 @@
 <br>
 
 ## Sobre a Launchstore
+
+Neste projeto foi realizado a containerização usando Docker, tornando o processo de implantação mais simples e seguro, além de facilitar o desenvolvimento colaborativo e a integração contínua. 
 
 Launchstore é um projeto de e-commerce, desenvolvido durante o bootcamp LaunchBase da [Rocketseat](https://rocketseat.com.br/), onde foram abordados conceitos como MVC, controle de sessões, criptografia de senhas, envio de e-mails, upload de imagens, validações no back e front end, animações, dentre outros.
 
@@ -101,15 +104,23 @@ Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/
 Siga os passos abaixo:
 
 ```bash
+
+# Instale o docker em sua máquina
+
+https://www.docker.com/products/docker-desktop/
+
 # Abra um terminal e copie este repositório com o comando
-$ git clone https://github.com/martins-rafael/launchstore.git
+$ git clone https://github.com/britoeder/semana-devops.git
 # ou use a opção de download.
 
 # Entre na pasta com 
-$ cd launchstore
+$ cd Docker
 
 # Instale as dependências
-$ npm install
+$ docker compose up -d
+# Este comando criará dois containers, aplicação e banco
+# Poderá validar o código no arquivo: docker-compose.yml
+
 
 # Crie o banco de dados e as tabelas utilizando os comandos
 # inclusos no arquivo "database.sql".
@@ -119,10 +130,9 @@ $ npm install
 # com o seu user e password do Postgres.
 
 # Popule o banco de dados usando o aquivo "seed.js":
+$ docker exec -it launchstore bash
 $ node seed.js
 
-# Rode a aplicação
-$ npm start
 ```
 
 **Importante:** Cuidado ao alterar/excluir a imagem de placeholder da pasta `plublic/images`, pois os produtos gerados pelo `seed.js` compartilham esse arquivo entre si.
@@ -142,5 +152,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 Feito com :purple_heart: by [Rafael Martins](https://github.com/martins-rafael)
 
-[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeldcmartins/)](https://www.linkedin.com/in/rafaeldcmartins/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeldcmartins@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeldcmartins@gmail.com)](mailto:rafaeldcmartins@gmail.com)
+Dockerizado por [Eder Brito](https://github.com/britoeder)
+
+[![Linkedin Badge](https://img.shields.io/badge/-Eder%20Brito-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/britoeder/)](https://www.linkedin.com/in/rafaeldcmartins/) 
