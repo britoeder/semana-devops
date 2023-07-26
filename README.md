@@ -154,4 +154,4 @@ Feito com :purple_heart: by [Rafael Martins](https://github.com/martins-rafael)
 
 Dockerizado por [Eder Brito](https://github.com/britoeder)
 
-[![Linkedin Badge](https://img.shields.io/badge/-Eder%20Brito-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/britoeder/)](https://www.linkedin.com/in/rafaeldcmartins/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Eder%20Brito-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/britoeder/)](https://www.linkedin.com/in/britoeder/) 
